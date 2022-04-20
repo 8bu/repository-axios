@@ -31,6 +31,9 @@
     "dist"
   ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rimraf dist && unbuild",
     "dev": "unbuild --stub",
@@ -42,7 +45,9 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "axios": "^0.26.1"
+    "axios": "^0.26.1",
+    "json-bigint": "^1.0.0",
+    "qs": "^6.10.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.20.2",
