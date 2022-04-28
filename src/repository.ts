@@ -98,7 +98,7 @@ export const createRepository = (
   return {
     GET: get,
     POST: post,
-    delete: remove,
+    DELETE: remove,
     PUT: put,
     PATCH: patch,
   }
